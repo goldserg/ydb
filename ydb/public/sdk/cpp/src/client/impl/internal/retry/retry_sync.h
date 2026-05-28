@@ -130,7 +130,7 @@ protected:
     }
 
     TStatusType RunOperation() override {
-        return InvokeWithOptionalCatch<TStatusType>(this->Settings_.CatchYdbExceptions_, [&]() -> TStatusType {
+        return InvokeWithRangeErrorCatch<TStatusType>([&]() -> TStatusType {
             if constexpr (TFunctionArgs<TOperation>::Length == 1) {
                 return Operation_(this->Client_);
             } else {
@@ -182,7 +182,7 @@ protected:
     }
 
     TStatusType RunOperation() override {
-        return InvokeWithOptionalCatch<TStatusType>(this->Settings_.CatchYdbExceptions_, [&]() -> TStatusType {
+        return InvokeWithRangeErrorCatch<TStatusType>([&]() -> TStatusType {
             if constexpr (TFunctionArgs<TOperation>::Length == 1) {
                 return Operation_(this->Session_.value());
             } else {
