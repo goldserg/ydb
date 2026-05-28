@@ -1,3 +1,5 @@
+* Implemented native ranges(TRowRange) and iterators over both streaming query results and TResultSet.
+
 ## v3.19.0
 
 * Added metric buffer for batched metric writes to reduce OpenTelemetry hot-path overhead.
@@ -11,7 +13,6 @@
 * Fixed self thread join core dump in IAM credentials provider
 
 * Fixed some data races in Producer (concurrent access to `PartitionsIndex`)
-
 
 * Added interface for export of metrics and spans, supported plugin for OpenTelemetry
 
