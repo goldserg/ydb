@@ -90,6 +90,7 @@ ydb/tests/compatibility test_fulltext_index.py.TestFulltextIndex.test_fulltext_i
 ydb/tests/compatibility test_in_memory.py.TestInMemoryMixedCluster.test_in_memory_mixed_cluster[mixed_prestable-26-3_and_stable-26-2-1]
 ydb/tests/compatibility test_in_memory.py.TestInMemoryRolling.test_in_memory_rolling[rolling_stable-26-2-1_to_prestable-26-3]
 ydb/tests/compatibility test_kafka_topic.py.TestKafkaTopicMixedClusterFixture.test_workload[mixed_prestable-26-3_and_stable-26-2-1]
+ydb/tests/compatibility test_rolling.py.TestRolling.test_kv[rolling_stable-26-1-1_to_stable-26-2-1-column]
 ydb/tests/compatibility test_simple_reader.py.TestSimpleReaderMixedCluster.test_simple_reader_mixed_cluster[mixed_prestable-26-3_and_stable-26-2-1]
 ydb/tests/compatibility test_simple_reader.py.TestSimpleReaderTabletTransfer.test_simple_reader_tablet_transfer[rolling_stable-26-2-1_to_prestable-26-3]
 ydb/tests/compatibility test_stress.py.TestStress.test_log[mixed_prestable-26-3_and_stable-26-2-1-column]
@@ -135,6 +136,7 @@ ydb/tests/compatibility/olap test_rename_table.py.TestRenameTableRollingUpdate.t
 ydb/tests/compatibility/olap test_rename_table.py.TestRenameTableRollingUpdate.test_rename_table[rolling_stable-26-2-1_to_prestable-26-3]
 ydb/tests/compatibility/result_set_format py3test.[test_result_set_arrow.py */*] chunk
 ydb/tests/compatibility/result_set_format test_result_set_arrow.py.TestResultSetArrow.test_compression[restart_prestable-26-3_to_prestable-26-3-codec3-ROW]
+ydb/tests/compatibility/result_set_format test_result_set_arrow.py.TestResultSetArrow.test_compression[restart_prestable-26-3_to_prestable-26-3-codec4-ROW]
 ydb/tests/compatibility/result_set_format test_result_set_arrow.py.TestResultSetArrow.test_compression[restart_stable-26-2-1_to_prestable-26-3-codec5-ROW]
 ydb/tests/compatibility/result_set_format test_result_set_arrow.py.TestResultSetArrow.test_multistatement[restart_prestable-26-3_to_stable-26-2-1-1-False-2048-ROW]
 ydb/tests/compatibility/result_set_format test_result_set_arrow.py.TestResultSetArrow.test_schema_inclusion_mode[restart_prestable-26-3_to_stable-26-2-1-0-2048-ROW]
